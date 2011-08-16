@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_marginBottom="10dip"
+	android:layout_height="wrap_content">
+	<ImageView android:layout_height="wrap_content"
+		android:layout_margin="5dip"
+		android:scaleType="fitStart" 
+		android:src="@drawable/default_avatar"
+		android:layout_width="wrap_content" 
+		android:layout_alignParentLeft="true"
+		android:id="@+id/avatar"></ImageView>
+	<TextView 
+	    android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:text="Created Date:"
+		android:layout_toRightOf="@+id/avatar"
+		android:layout_alignTop="@+id/avatar" 
+		android:id="@+id/createDate"></TextView>
+	<TextView 
+	    android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:layout_below="@+id/createDate"
+		android:text="Version:0.9.1" 
+		android:layout_alignLeft="@+id/createDate"
+		android:id="@+id/version"></TextView>
+	<TextView 
+	    android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:text="2011/08/15 17:00:00"
+		android:layout_toRightOf="@+id/createDate"
+		android:layout_alignTop="@+id/createDate"
+		android:layout_alignBottom="@+id/createDate" 
+		android:id="@+id/realDate"
+		android:layout_marginLeft="5dip"></TextView>
+
+</RelativeLayout>
