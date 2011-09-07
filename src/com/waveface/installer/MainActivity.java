@@ -27,8 +27,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         ListView lv = (ListView)this.findViewById(R.id.list);
+        Log.d(TAG, "Start invoke URL:"+Constant.SERVER_URL+"installer.json");
         String jsonOutput = HttpInvoker.getStringFromUrl(Constant.SERVER_URL+"installer.json");
-		Log.d(TAG, "Start invoke URL");
+		Log.d(TAG, "Start invoke URL output:"+jsonOutput);
 		final InstallerEntity[] installers = new Gson().fromJson(jsonOutput, InstallerResponse.class).installers;
 		
 		
